@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	<title>Le Faisan</title>
+</head>
+<body>
+<header>
+<!-- 	<img class="logo" src="images/certab_rgb.jpg"> -->
+	<h1>LE FAISAN</h1>
+	<img class="faisan" src="images/Faisan_pret_a_cuire.jpg">
+</header>
+<div class="maincontent">
+	<div class="contact">
+		<p>Contact</p>	
+		<p id="adresse"> : sergueïbrin@gmail.com</p>
+	</div>
+
+	<h2>REVUE SANS AUTEUR, SANS ADRESSE, SANS EDITION</h2>
+	
+	<article class="article" close="0">
+		<h3><span class="tiret">-</span> Soumettre un article</h3>
+		<p>Les articles reçus seront ajoutés au numéro en cours de préparation.</p>
+		<div class="envoiFichier">
+			<p>Formats de fichiers: .txt, .doc, .docx, .odp, .pdf ...</p>
+			<input class="boitechercher"  type="file" size="400" value="Parcourir..." name="file_userfile[]"; border-radius:5px;></input>
+			<input class="bouton" type="submit" value="Envoyer le fichier" name="mediaupload"></input>
+		</div>
+	</article>
+
+	<article class="revue">
+		<h3>- Numéro 1</h3>
+		<p>Juillet 2015 - Télécharger le numéro</p>
+	</article>
+
+	<article class="revue">
+	<h3>- Numéro 2</h3>
+		<p>A venir - livraison prévue : Décembre 2015</p>
+	</article>
+
+
+
+	<article>
+		<h3 class="articlelien" closelien="0"><span class="tiretlien">-</span> Liens</h3>
+		<ul class="liens">
+			<li><a href="http://ubuweb.com/" target="blank">- ubuweb</a></li>
+			<li><a href="https://infokiosques.net/"target="blank">- infokiosques</a></li>
+			<li><a href="http://www.laboiteverte.fr/" target="blank">- la boite verte</a></li>
+			<li><a href="http://looo.ch/" target="blank">- looo.ch</a></li>
+		</ul>	
+
+	</article>
+
+</div>
+
+<script>
+	$(document).ready(function(){
+		$('.article').click(function() {
+			var close=$('.article').attr("close");
+
+			if (close==0) {
+			$('.envoiFichier').show();
+			$('.tiret').css({
+				'transform':'rotate('+90+'deg)',	
+			});
+			$('.article').attr("close", "1");
+		}else{
+			$('.envoiFichier').hide();
+			$('.tiret').css({
+				'transform':'rotate('+0+'deg)',	
+			});
+			$('.article').attr("close", "0");
+		}
+		});
+
+		$('.articlelien').click(function() {
+			var closelien=$('.articlelien').attr("closelien");
+
+			if (closelien==0) {
+			$('.liens').show();
+			$('.tiretlien').css({
+				'transform':'rotate('+90+'deg)',	
+			});
+			$('.articlelien').attr("closelien", "1");
+		}else{
+			$('.liens').hide();
+			$('.tiretlien').css({
+				'transform':'rotate('+0+'deg)',	
+			});
+			$('.articlelien').attr("closelien", "0");
+		}
+		});
+	});
+
+</script>
+
+
+</body>
+</html>
