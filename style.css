@@ -1,0 +1,148 @@
+
+body{
+	width: 100%;
+	margin:0px;
+	background-color: black;
+	color: white;
+	font-family: courier;
+	position: absolute;
+	font-size: 14px;
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+
+}
+
+header{
+	position: relative;
+	width: 100%;
+	top:0px;
+	left: 0px;
+	background-color: white;
+	color:black;
+	padding-bottom: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.maincontent {
+	display: flex;
+	flex-direction:column;
+}
+
+h1{
+	font-size: 40px;
+	padding-left:20px;
+}
+
+h2{
+	padding-left: 20px;
+	font-size: 18px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+h3{
+	font-size: 16px;
+}
+
+article{
+	padding-left: 20px;
+}
+
+article p{
+	position: relative;
+	top: -15px;
+	left: 20px;
+}
+
+.envoiFichier p{
+	position:relative;
+	top:0px;
+	left:0px;
+}
+
+.contact {
+	width: 100%;
+	cursor: pointer;
+}
+
+.contact > p{
+	display: inline;
+}
+
+.contact #adresse{
+	display: none;
+}
+
+.contact:hover #adresse{
+	display: inline;
+}
+
+.article div{
+	position: relative;
+	top: -20px;
+	left: 20px;
+}
+
+.article, .articlelien{
+	cursor: pointer;
+}
+
+.envoiFichier{
+	display: none;
+}
+
+.liens{
+	display: none;
+}
+
+.tiret{
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+
+.tiretlien{
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+
+header a{
+	text-align: left; 
+}
+
+.faisan{
+	display: flex;
+	width: 30%;
+}
+
+input[type="file"].boitechercher{
+	background-color: white;
+	width: 325px;
+}
+
+input[type="submit"].bouton{
+	background-color: white;
+	position: relative;
+	width: 170px;
+}
+
+.liens{
+	text-decoration: none;
+	list-style: none;
+}
+ul{
+	position: relative;
+	top: -15px;
+	left: -20px;
+}
+
+a:checked {
+	color: black;
+}
