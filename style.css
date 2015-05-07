@@ -31,9 +31,15 @@ header{
 	flex-direction:column;
 }
 
+.colonneliens{
+	display: flex;
+	flex-direction: row;
+}
+
 h1{
-	font-size: 40px;
-	padding-left:20px;
+	font-size: 60px;
+	margin:0px;
+	padding: 0px;
 }
 
 h2{
@@ -113,13 +119,12 @@ article p{
 	margin-right: 10px;
 }
 
-header a{
+/*header a{
 	text-align: left; 
-}
+}*/
 
-.faisan{
+.faisan .logo{
 	display: flex;
-	width: 30%;
 }
 
 input[type="file"].boitechercher{
