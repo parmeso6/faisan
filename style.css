@@ -101,6 +101,9 @@ article p{
 
 .envoiFichier{
 	display: none;
+	position: relative;
+	top: -15px;
+	left: 20px;
 }
 
 .liens{
